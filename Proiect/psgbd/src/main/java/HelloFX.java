@@ -10,8 +10,9 @@ public class HelloFX extends Application {
     public void start(Stage stage) {
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
-        Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Label l = new Label("Hello, JavaFX " +", running on Java ");
         Scene scene = new Scene(new StackPane(l), 640, 480);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
