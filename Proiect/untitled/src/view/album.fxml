@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefHeight="218.0" prefWidth="100.0" style="-fx-background-color: #f98b88;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="399.0" prefWidth="101.0">
+                    <children>
+                        <Button layoutX="11.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background: none; -fx-color: inherit; -fx-border: none; -fx-padding: 0; -fx-font: inherit; -fx-border-bottom: 1px solid #444; -fx-text-fill: white;" text="MY LIBRARY" />
+                        <Button layoutX="20.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background: none; -fx-color: inherit; -fx-border: none; -fx-padding: 0; -fx-font: inherit; -fx-border-bottom: 1px solid #444; -fx-text-fill: white;" text="EXPLORE" />
+                        <Button layoutX="22.0" layoutY="59.0" mnemonicParsing="false" style="-fx-background: none; -fx-color: inherit; -fx-border: none; -fx-padding: 0; -fx-font: inherit; -fx-border-bottom: 1px solid #444; -fx-text-fill: white;" text="FRIENDS" />
+                        <Button layoutX="23.0" layoutY="359.0" mnemonicParsing="false" style="-fx-background: none; -fx-color: inherit; -fx-border: none; -fx-padding: 0; -fx-font: inherit; -fx-border-bottom: 1px solid #444; -fx-text-fill: white;" text="SEARCH" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="350.0" />
+                        <Button layoutX="21.0" layoutY="377.0" mnemonicParsing="false" style="-fx-background: none; -fx-color: inherit; -fx-border: none; -fx-padding: 0; -fx-font: inherit; -fx-border-bottom: 1px solid #444; -fx-text-fill: white;" text="LOG OUT" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="370.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <FlowPane prefHeight="397.0" prefWidth="497.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../discography/images/lana.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Region prefHeight="103.0" prefWidth="14.0" />
+                  <Label prefHeight="71.0" prefWidth="356.0" text="TO PIMP A BUTTERFLY">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KENDRICK LAMAR" wrappingWidth="292.3857421875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HIP-HOP" wrappingWidth="156.25">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane prefHeight="183.0" prefWidth="496.0">
+                     <content>
+                        <FlowPane prefHeight="181.0" prefWidth="493.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14" wrappingWidth="21.2060546875" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="songtitlesongtitle" wrappingWidth="411.6787109375" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:54" />
+                           </children>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ALSO LISTENING:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane prefHeight="54.0" prefWidth="496.0">
+                     <content>
+                        <FlowPane prefHeight="51.0" prefWidth="493.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMILIAN RADU" wrappingWidth="487.2060546875" />
+                              <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRISTIAN GATU" wrappingWidth="487.2060546875" />
+                           </children>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+                </FlowPane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.fxml.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F98B88; -fx-background-size: auto;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.loginController">
+   <right>
+      <GridPane alignment="BOTTOM_CENTER" hgap="1.0" style="-fx-background-color: white;" vgap="1.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+          <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <PasswordField style="-fx-background-radius: 25;" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <TextField alignment="CENTER" prefHeight="27.0" prefWidth="130.0" style="-fx-background-radius: 25;" GridPane.columnSpan="2" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <Label text="EMAIL">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="69.0" text="PASSWORD" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#goToNewReleases" prefHeight="28.0" prefWidth="44.0" style="-fx-background-radius: 15; -fx-text-fill: black; -fx-background-color: #F98B88;" text="GO" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="CENTER" layoutX="115.0" layoutY="382.0" mnemonicParsing="false" style="-fx-background: none;" text="LOGIN" GridPane.rowIndex="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="312.0" mnemonicParsing="false" onAction="#goToRegister" style="-fx-background: none;" text="REGISTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </right>
+   <left>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SHARE YOUR TASTE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Helvetica" size="34.0" />
+         </font>
+      </Text>
+   </left>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</BorderPane>
