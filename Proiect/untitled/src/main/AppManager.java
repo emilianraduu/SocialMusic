@@ -13,73 +13,73 @@ public class AppManager {
     SongController sc = new SongController(emf);
 
     public void run() {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            if (pw.getBoolean() == false) {
-
-                System.out.println("Please login or register");
-                System.out.print("Input command:");
-                String command = scanner.nextLine();
-                String[] params = command.trim().split("\\s+");
-                System.out.println(pw.getBoolean());
-                switch (params[0]) {
-                    case "register":
-                        createPerson(params[1], params[2], params[3], params[4], params[5]);
-                        break;
-
-                    case "login":
-                        checkLogin(params[1], params[2]);
-                        break;
-                }
-            }
-
-            if (pw.getBoolean()) {
-                System.out.println("You are logged in.");
-                System.out.print("Input command:");
-                String command = scanner.nextLine();
-                if (command.equals("exit")) break;
-                String[] params = command.trim().split("\\s+");
-                pw.getBoolean();
-                switch (params[0]) {
-                    case "friend":
-                        addFriend(params[1], params[2]);
-                        break;
-
-                    case "rm-friend":
-                        removeFriend(params[1], params[2]);
-                        break;
-
-                    case "find":
-                        findByEmail(params[1]);
-                        break;
-
-                    case "get-friends":
-                        getFriends(params[1]);
-                        break;
-
-                    case "add-album":
-                        addAlbum(params[1], params[2], params[3], params[4], params[5]);
-                        break;
-
-                    case "add-song":
-                        addSong(params[1], params[2], params[3]);
-                        break;
-
-                    case "find-album":
-                        findAlbum(params[1]);
-                        break;
-
-                    case "remove-album":
-                        removeAlbum(params[1]);
-                        break;
-
-                    case "sign-out":
-                        signOut();
-                        break;
-
-                }
-            }
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        while (true) {
+//            if (pw.getBoolean() == false) {
+//
+//                System.out.println("Please login or register");
+//                System.out.print("Input command:");
+//                String command = scanner.nextLine();
+//                String[] params = command.trim().split("\\s+");
+//                System.out.println(pw.getBoolean());
+//                switch (params[0]) {
+//                    case "register":
+//                        createPerson(params[1], params[2], params[3], params[4], params[5]);
+//                        break;
+//
+//                    case "login":
+//                        checkLogin(params[1], params[2]);
+//                        break;
+//                }
+//            }
+//
+//            if (pw.getBoolean()) {
+//                System.out.println("You are logged in.");
+//                System.out.print("Input command:");
+//                String command = scanner.nextLine();
+//                if (command.equals("exit")) break;
+//                String[] params = command.trim().split("\\s+");
+//                pw.getBoolean();
+//                switch (params[0]) {
+//                    case "friend":
+//                        addFriend(params[1], params[2]);
+//                        break;
+//
+//                    case "rm-friend":
+//                        removeFriend(params[1], params[2]);
+//                        break;
+//
+//                    case "find":
+//                        findByEmail(params[1]);
+//                        break;
+//
+//                    case "get-friends":
+//                        getFriends(params[1]);
+//                        break;
+//
+//                    case "add-album":
+//                        addAlbum(params[1], params[2], params[3], params[4], params[5]);
+//                        break;
+//
+//                    case "add-song":
+//                        addSong(params[1], params[2], params[3]);
+//                        break;
+//
+//                    case "find-album":
+//                        findAlbum(params[1]);
+//                        break;
+//
+//                    case "remove-album":
+//                        removeAlbum(params[1]);
+//                        break;
+//
+//                    case "sign-out":
+//                        signOut();
+//                        break;
+//
+//                }
+//            }
+//        }
     }
 
     private void addSong(String albumName, String songName, String length) {
